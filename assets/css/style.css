@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #475569;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1f2937;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(37, 99, 235, 0.8)),
+                url('/assets/img/hero-bg.jpg') center/cover;
+    padding: 8rem 0;
+    margin-bottom: 2rem;
+}
+
+/* Travel Cards */
+.travel-card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.travel-card:hover {
+    transform: translateY(-5px);
+}
+
+.travel-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Features Section */
+.feature-item {
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+    margin-bottom: 1rem;
+}
+
+/* Navigation */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+}
+
+/* Map Container */
+.map-container {
+    height: 400px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+/* Ratings */
+.rating-stars {
+    color: #fbbf24;
+}
+
+/* Image Gallery */
+.gallery-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Cultural Sites */
+.cultural-site-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.cultural-site-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Admin Dashboard */
+.admin-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.admin-stats {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .feature-item {
+        margin-bottom: 1rem;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
